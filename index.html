@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link type="stylesheet/css" href = "style.css"/>
+    <link src="highscore.html"/>
     
     <title>Mozart Quiz</title>
 </head>
 <body>
-    
 
-
+    <br>
+    <br>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Mozart Quiz</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="highscore.html" role="tab" aria-controls="pills-profile" aria-selected="false">High Score</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+    <br>
+        
+      </div>
+      <div>
+      
+      <br>
+      <br>
     <div class="jumbotron">
-        <h1 class="display-4"></h1>
-        <p class="lead"></p>
+        <h1 class="display-4">Mozart Quiz</h1>
+        <p id="questions" class="lead">Question</p>
         <hr class="my-4">
-        <p></p>
+        <div>
+        <ul>
+            <li id="a"><span>text</span></li>
+            <li id="b"><span>text</span></li>
+            <li id="c"><span>text</span></li>
+            <li id="d"><span>text</span></li>
+        </ul>
+        </div>
         
 
         <a class="btn btn-primary btn-lg" href="#" role="button">Submit Answer</a>
       </div>
 
+      <script type="text/javascript" href="game.js" href="questions.js"></script>
 
-    <script type="text/javascript" href="game.js" href="questions.js"></script>
 
 </body>
 </html>

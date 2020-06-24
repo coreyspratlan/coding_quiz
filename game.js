@@ -1,8 +1,8 @@
 // set global variables
 
 
-
-var timer = 
+var seconds = setInterval(timer, 1000);
+var timer =
 var seconds = 
 var timeElapsed = 
 var endTime = 
@@ -10,14 +10,20 @@ var countSpan =
 var h1El = 
 var pTag = 
 var submitButton = 
+var 
 var choices = 
-var answers = 
+var userChoices = 
 
 
 
 // Make helper functions
 
-functions () {}
+
+functions timer() {
+  document.getElementById("timer").innerHTML = seconds(); 
+}
+
+
 functions () {}
 functions () {}
 
@@ -26,27 +32,27 @@ functions () {}
 
 
 // Create Elements to be used
-var h1El = document.createElement("h1");
-var p1El = document.createElement("p1");
-var p2El = document.createElement("p2");
-var p3El = document.createElement("p3");
-var p4El = document.createElement("p4");
-var p5El = document.createElement("p5");
+var h1El = document.querySelector("h1");
+var pTag = document.querySelectorAll("p");
 
-var submitButton = doucument.createElement("submitButton");
+
+
+var submitButton = doucument.querySelector("submitButton");
+
 var timerEl = document.querySelector
+
+var jumbotronDiv = document.getElementById("jumbotron");
 
 
 
 // Make the text content for each element
 h1El.textContent = "Mozart Quiz";
-p1El.textContent = "Questions";
-p2El.textContent = "Answer Option #1";
-p3El.textContent = "Answer Option #2";
-p4El.textContent = "Answer Option #3";
-p5El.textContent = "Answer Option #4";
+liEl.textContent = "Questions";
+
 
 timerEl.textContent = "Sumit Answer";
+
+jumbotronDiv.textContent =
 
 
 
@@ -54,22 +60,15 @@ timerEl.textContent = "Sumit Answer";
 // Style the Elements
 
 H1El.setAttribute("style", "text-decoration: underline ; font-size: 20px");
-p1El.setAttribute("style", "font-size: 15px");
-p2El.setAttribute("style", "font-size: 15px");
-p3El.setAttribute("style", "font-size: 15px");
-p4El.setAttribute("style", "font-size: 15px");
-p5El.setAttribute("style", "font-size: 15px");
+liEl.setAttribute("style", "font-size: 15px");
 
 
 
 // Append elements to the document 
 
 h1El.appendChild(h1El);
-p1El.appendChild(p1El);
-p2El.appendChild(p2El);
-p3El.appendChild(p3El);
-p4El.appendChild(p4El);
-p5El.appendChild(p5El);
+liEl.appendChild(liEl);
+
 
 //append button to the DOM
 
@@ -124,8 +123,8 @@ document.getElementById("button").addEventListener("click", displayTime);
 // when the submit button is pressed, the timer starts and the first question appears
 submitButton.addEventListener("click", startTimer);
 
-function //cycle to next question once the previous question is answered
-
+ //cycle to next question once the previous question is answered
+function () {}
 
 
 
