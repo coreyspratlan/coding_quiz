@@ -1,5 +1,5 @@
  
-
+// I want the allQuestions to cycle through once the previous answer was clicked.
 
 var allQuestions = [
     "What year was Mozart born?", 
@@ -13,6 +13,8 @@ var allQuestions = [
     "How many violin concertos did Mozart compose?",
     "Mozart died while composing his Requiem?"
 ]
+
+// I want to cycle through each of the allChoices after the previous quesiton was answered.
 
 var allChoices = [
     ["1980","1645","1756","1812"],
@@ -28,6 +30,8 @@ var allChoices = [
 
 ]
 
+// I want the correct answer to be recognized by the hovered list item when clicked.
+
 var allAnswers = [
     "1756",
     "Leopold",
@@ -41,9 +45,17 @@ var allAnswers = [
     "true"
 ]
 
+choiceA = ["1980", "Ted", "Junebug", "101", "true", "The Marriage Of Figaro", "A-flat Major, D Minor, D Major", "Debbie", "80", "true"]
+
+choiceB = ["1645", "Leopold", "Sweetie", "41", "false", "Cosi Fan Tutte", "C Major, E-flat Major, G Minor", "Hilda", "5", "false"]
+
+choiceC = [ "1756", "Larry", "Nanneral", "9", "", "The Magic Flute", "G Major, E Major, A Major", "Paula", "2", ""]
+
+choiceD = [ "1812", "Ludwig", "Fancy", "2029", "", "Don Giovanni", "F Major, B-flat Major, D-flat Major", "Constanze", "none", "" ]
+
+
 var i = -1
 
-    //Do I append this to my array? = array[questions];
     function questions () {
         i++;
 
@@ -54,6 +66,7 @@ var i = -1
     }
  
     questions();
+
 
 
 /*
@@ -119,4 +132,3 @@ var i = -1
         answer: true,
     }]
 */
-    

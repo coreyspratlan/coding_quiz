@@ -33,3 +33,7 @@ I organized my javascript files in this order:
 
 
 I began setting up functions based on the criteria.  I began setting up the syntax for eventListeners for button "clicks."  
+
+/Users/coreyspratlan/Desktop/Screen Shot 2020-06-23 at 10.27.21 PM.png
+
+/Users/coreyspratlan/Desktop/Screen Shot 2020-06-23 at 10.27.29 PM.png
