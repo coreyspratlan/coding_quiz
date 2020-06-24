@@ -1,73 +1,62 @@
 // set global variables
-
-
-var seconds = setInterval(timer, 1000);
-var timer =
-var seconds = 
-var timeElapsed = 
-var endTime = 
-var countSpan = 
-var h1El = 
-var pTag = 
-var submitButton = 
-var 
+var questionTimer =
+var endTimer =  
+var startButton = 
+var questions
 var choices = 
+var answers = 
 var userChoices = 
-
-
 
 // Make helper functions
 
 
-functions timer() {
-  document.getElementById("timer").innerHTML = seconds(); 
-}
+// When the start button is clicked, it disappears and the timer begins.
 
+// Timer Function to countdown
+
+    var timeleft = 70;
+    var questionTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("timer");
+    if(timeleft <= 0)
+        clearInterval(questionTimer);
+    },1000);
+
+
+
+functions startTimer () {}
 
 functions () {}
-functions () {}
-
-
-
 
 
 // Create Elements to be used
-var h1El = document.querySelector("h1");
-var pTag = document.querySelectorAll("p");
 
 
+var startButton = doucument.querySelector("startButton");
 
-var submitButton = doucument.querySelector("submitButton");
-
-var timerEl = document.querySelector
+var timer = document.querySelector
 
 var jumbotronDiv = document.getElementById("jumbotron");
 
 
 
 // Make the text content for each element
-h1El.textContent = "Mozart Quiz";
-liEl.textContent = "Questions";
 
-
-timerEl.textContent = "Sumit Answer";
 
 jumbotronDiv.textContent =
 
 
-
-
 // Style the Elements
 
-H1El.setAttribute("style", "text-decoration: underline ; font-size: 20px");
-liEl.setAttribute("style", "font-size: 15px");
+// H1El.setAttribute("style", "text-decoration: underline ; font-size: 20px");
+// liEl.setAttribute("style", "font-size: 15px");
 
 
 
 // Append elements to the document 
 
-h1El.appendChild(h1El);
-liEl.appendChild(liEl);
+// h1El.appendChild(h1El);
+// liEl.appendChild(liEl);
 
 
 //append button to the DOM
@@ -121,7 +110,7 @@ document.getElementById("button").addEventListener("click", displayTime);
 // add the events that need to happen
 
 // when the submit button is pressed, the timer starts and the first question appears
-submitButton.addEventListener("click", startTimer);
+startButton.addEventListener("click", startTimer);
 
  //cycle to next question once the previous question is answered
 function () {}
